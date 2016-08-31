@@ -122,6 +122,7 @@ $(document).ready(function() {
       $.ajax({
         type: 'DELETE',
         url: baseUrl + '/' + todoId,
+        
         success: function onDeleteSuccess(json) {
           // remove deleted todo from all todos
           allTodos.splice(allTodos.indexOf(todoToDelete), 1);
